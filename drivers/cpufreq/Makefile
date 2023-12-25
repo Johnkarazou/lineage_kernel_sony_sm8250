@@ -23,6 +23,9 @@ obj-$(CONFIG_CPUFREQ_DT_PLATDEV)	+= cpufreq-dt-platdev.o
 
 obj-$(CONFIG_CPUFREQ_DUMMY)		+= dummy-cpufreq.o
 
+# CPUfreq limiter
+obj-$(CONFIG_CPU_FREQ_LIMIT) += cpufreq_limit.o
+
 ##################################################################################
 # x86 drivers.
 # Link order matters. K8 is preferred to ACPI because of firmware bugs in early
